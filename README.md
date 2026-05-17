@@ -2,7 +2,9 @@
 
 API REST pública construida con **Cloudflare Workers** y **Hono** que expone los datos del [Observatorio macroeconómico](https://github.com/israel44moran/observatorio-macro-sql) (Proyecto 9 del portafolio). Sin autenticación, CORS abierto, edge caching de 1 hora.
 
-> **Endpoint público**: `https://api-observatorio-macro.<su-subdominio>.workers.dev` (definitivo tras el deploy)
+> ## 🌐 En vivo: <https://api-observatorio-macro.claude44israel.workers.dev>
+>
+> Desplegada en Cloudflare Workers — corre en el edge más cercano al usuario, latencia típica <50 ms.
 
 ## Qué demuestra
 
@@ -28,16 +30,16 @@ API REST pública construida con **Cloudflare Workers** y **Hono** que expone lo
 
 ```bash
 # Saludo
-curl https://api-observatorio-macro.<sub>.workers.dev/api/health
+curl https://api-observatorio-macro.claude44israel.workers.dev/api/health
 
 # Catálogo completo
-curl https://api-observatorio-macro.<sub>.workers.dev/api/indicators
+curl https://api-observatorio-macro.claude44israel.workers.dev/api/indicators
 
 # Inflación de los últimos 7 años
-curl "https://api-observatorio-macro.<sub>.workers.dev/api/series/inflacion_pct?from=2018&to=2024"
+curl "https://api-observatorio-macro.claude44israel.workers.dev/api/series/inflacion_pct?from=2018&to=2024"
 
 # Estado de México en 2020 (con el evento COVID-19 asociado)
-curl https://api-observatorio-macro.<sub>.workers.dev/api/year/2020
+curl https://api-observatorio-macro.claude44israel.workers.dev/api/year/2020
 ```
 
 ### Respuesta de ejemplo

@@ -13,7 +13,3 @@ enabled = true
 # Recursos del entorno
 [placement]
 mode = "smart"
-
-# Limits razonables para una API publica de solo lectura
-[limits]
-cpu_ms = 50
