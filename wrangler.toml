@@ -6,6 +6,9 @@ main = "src/index.js"
 compatibility_date = "2026-05-17"
 compatibility_flags = ["nodejs_compat"]
 
+# Habilitar explicitamente el subdominio publico workers.dev
+workers_dev = true
+
 # Observability: habilita logs en el dashboard de Cloudflare
 [observability]
 enabled = true
