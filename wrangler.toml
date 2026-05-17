@@ -1,0 +1,19 @@
+# Configuracion de Cloudflare Workers para la API del Observatorio Macro.
+# Docs: https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "api-observatorio-macro"
+main = "src/index.js"
+compatibility_date = "2026-05-17"
+compatibility_flags = ["nodejs_compat"]
+
+# Observability: habilita logs en el dashboard de Cloudflare
+[observability]
+enabled = true
+
+# Recursos del entorno
+[placement]
+mode = "smart"
+
+# Limits razonables para una API publica de solo lectura
+[limits]
+cpu_ms = 50

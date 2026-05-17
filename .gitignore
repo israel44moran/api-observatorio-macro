@@ -1,0 +1,21 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Wrangler
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# IDE / SO
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+# Locks (a discrecion: package-lock.json sí lo subo)
+yarn.lock
+pnpm-lock.yaml
